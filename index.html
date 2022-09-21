@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 15px;
+        font-family: "Outfit", sans-serif;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: var(--light-gray);
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        border-radius: 1rem;
+        padding: 1rem;
+        max-width: 20rem;
+      }
+
+      .text {
+        padding: 1rem;
+        color: var(--grayish-blue);
+      }
+
+      h1{
+        margin-bottom: 1rem;
+        color: var(--dark-blue);
+      }
+
+      picture {
+        max-width: 5rem;
+      }
+
+      img {
+        border-radius: 0.5rem;
+        object-fit: contain;
+        overflow: hidden;
+        max-width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <picture>
+        <img src="images\image-qr-code.png" alt="imagen de un qr" />
+      </picture>
+      <div class="text">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
